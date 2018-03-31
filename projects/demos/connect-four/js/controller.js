@@ -108,6 +108,7 @@ function create() {
     // Reset game state
     currentState = "ready";
     shownWinner = false;
+    updateGraphics();
 }
 
 
@@ -116,10 +117,10 @@ function setGameScale() {
 
     // Calculate scaled cell padding
     let windowWidth = $(window).width();
-    if(windowWidth <= 500) { CELL_PADDING = 2; }
-    if(windowWidth > 500 && windowWidth <= 800) { CELL_PADDING = 3; }
-    if(windowWidth > 800) { CELL_PADDING = 5; }
-
+    if(windowWidth <= 500) { CELL_PADDING = 1; }
+    if(windowWidth > 500 && windowWidth <= 800) { CELL_PADDING = 2; }
+    if(windowWidth > 800) { CELL_PADDING = 3; }
+    if(COLUMN_COUNT > 20) { CELL_PADDING = 1; }
 
     // Calculate scaled cell size
     let maxWidth = 1000;

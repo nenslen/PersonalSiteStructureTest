@@ -29,9 +29,9 @@
                     </div>
 
                     <div id="controls" class="grid grid-3-3-3">
-                        <div id="undoButton" class="button">Undo</div>
-                        <div id="redoButton" class="button">Redo</div>
-                        <div id="clearButton" class="button">Clear</div>
+                        <button class="button button-blue" id="undoButton">Undo</button>
+                        <button class="button button-blue" id="redoButton">Redo</button>
+                        <button class="button button-blue" id="clearButton">Clear</button>
                     </div>
                     
                     <div id="result" class="card center"><h1>&nbsp</h1></div>

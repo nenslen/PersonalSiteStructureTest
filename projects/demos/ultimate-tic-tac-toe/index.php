@@ -26,7 +26,7 @@
 					</div>
 
 					<div class="grid">
-						<button class="button" id="startButton">New Game</button>
+						<button class="button button-green" id="startButton">New Game</button>
 					</div>
 
 					<div class="card" id="settings-menu">
@@ -39,11 +39,31 @@
 						</span>
 						-->
 
-						<div class="grid grid-2">
+						<div class="grid grid-2-2-1">
+
+							<!-- Game Mode -->
+							<div>
+								<span class="item">
+									<span class="settings-header">Game Mode</span>
+									<div class="option">
+										<input id="type1" type="radio" name="gamemoderadio" value="hvh" checked>
+										<label for="type1">Human vs Human</label>
+									</div>
+									<div class="option">
+										<input id="type2" type="radio" name="gamemoderadio" value="hvc">
+										<label for="type2">Human vs AI</label>
+									</div>
+									<div class="option">
+										<input id="type3" type="radio" name="gamemoderadio" value="cvc">
+										<label for="type3">AI vs AI</label>
+									</div>
+								</span>
+							</div>
+
 							<!-- Difficulty -->
 							<div>
 								<span class="item">
-									Difficulty
+									<span class="settings-header">Difficulty</span>
 									<div class="option">
 										<input id="level1" type="radio" name="difficultyradio" value="1">
 										<label for="level1">Easy</label>
@@ -51,26 +71,6 @@
 									<div class="option">
 										<input id="level2" type="radio" name="difficultyradio" value="2" checked>
 										<label for="level2">Medium</label>
-									</div>
-								</span>
-							</div>
-
-
-							<!-- Game Mode -->
-							<div>
-								<span class="item">
-									Game Mode
-									<div class="option">
-										<input id="type1" type="radio" name="gamemoderadio" value="hvh" checked>
-										<label for="type1">Human vs Human</label>
-									</div>
-									<div class="option">
-										<input id="type2" type="radio" name="gamemoderadio" value="hvc">
-										<label for="type2">Human vs Computer</label>
-									</div>
-									<div class="option">
-										<input id="type3" type="radio" name="gamemoderadio" value="cvc">
-										<label for="type3">Computer vs Computer</label>
 									</div>
 								</span>
 							</div>

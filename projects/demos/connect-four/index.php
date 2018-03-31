@@ -24,7 +24,7 @@
 					<div id="game-canvas"></div>
 
 					<div class="grid">
-						<button class="button" id="startButton">New Game</button>
+						<button class="button button-green" id="startButton">New Game</button>
 					</div>
 					
 					<div class="card" id="settings-menu">
