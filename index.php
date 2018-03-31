@@ -66,7 +66,7 @@
 										intelligence while working on it!</p>
 										<!--<p><a href='' target='_blank'>Full Video on Youtube</a></p>-->
 										<p class="text-align-left"><a href='https://github.com/nenslen/NeuralNetMNIST' target='_blank'>Project on GitHub</a></p>
-										<p class="text-align-left"><a href='http://nicolasenslen.com/NeuralNetwork/' target='_blank'>Demo</a></p>
+										<p class="text-align-left"><a href='projects/demos/digit-recognition/'>Demo</a></p>
 									</div>
 								</div>
 							</div>
@@ -232,7 +232,7 @@
 										<p class="text-align-left">This was a project for my User Interface class. The goal was to make a website that was obvious
 										   and easy to use. I used a very simple design to show some computer hardware information.</p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/ComputerSite' target='_blank'>Project on GitHub</a></p>
-										<p class="text-align-left"><a href='http://nicolasenslen.com/ComputerSite/' target='_blank'>Demo</a></p>
+										<p class="text-align-left"><a href='projects/demos/computer-site/'>Demo</a></p>
 									</div>
 								</div>
 							</div>
@@ -262,7 +262,7 @@
 										is to a board that has already been won, then that player may choose any board for their turn.</p>
 										<p class="text-align-left"><a href='https://youtu.be/6TgGcMFGhXo' target='_blank'>Full Video on Youtube</a></p>
 										<p class="text-align-left"><a href='https://github.com/nenslen/UltimateTicTacToe' target='_blank'>Project on GitHub</a></p>
-										<p class="text-align-left"><a href='http://nicolasenslen.com/UltimateTicTacToe/' target='_blank'>Demo</a></p>
+										<p class="text-align-left"><a href='projects/demos/ultimate-tic-tac-toe/'>Demo</a></p>
 									</div>
 								</div>
 							</div>
