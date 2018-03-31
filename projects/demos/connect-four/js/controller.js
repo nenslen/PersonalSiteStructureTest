@@ -38,6 +38,13 @@ $(function() {
     $('#startButton').click(function() {
         game.state.restart();
     });
+
+    $( window ).resize(function() {
+        clearGraphics();
+        setGameScale();
+        createGraphics();
+        updateGraphics();
+    });
 });
 
 
@@ -76,13 +83,13 @@ function create() {
     gameWidth = COLUMN_COUNT * (CELL_SIZE + CELL_PADDING) + CELL_PADDING;
     gameHeight = ROW_COUNT * (CELL_SIZE + CELL_PADDING) + CELL_PADDING + (CELL_SIZE + CELL_PADDING);
     game.scale.setGameSize(gameWidth, gameHeight);
-    //game.scale.setGameSize(700, 450);
-    //game.scale.setGameSize(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio);
     game.stage.backgroundColor = "#2d2d2d";
     $('#winner').hide();
     currentColumnHover = 0;
+    setGameScale();
     createGraphics();
-
+    
+    
 
     // Set up connect 4 game
     connect4 = new Connect4(ROW_COUNT, COLUMN_COUNT, WIN_LENGTH);
@@ -101,10 +108,32 @@ function create() {
     // Reset game state
     currentState = "ready";
     shownWinner = false;
-    //console.log(game);
-    //game.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
-    //game.stage.scale.setShowAll();
-    //game.stage.scale.refresh();
+}
+
+
+// Scales the game's graphics to match the container width
+function setGameScale() {
+
+    // Calculate scaled cell padding
+    let windowWidth = $(window).width();
+    if(windowWidth <= 500) { CELL_PADDING = 2; }
+    if(windowWidth > 500 && windowWidth <= 800) { CELL_PADDING = 3; }
+    if(windowWidth > 800) { CELL_PADDING = 5; }
+
+
+    // Calculate scaled cell size
+    let maxWidth = 1000;
+    let maxCellSize = 64;
+    let viewportWidth = $(window).width() - (2 * parseInt($('.section-wrapper').css('padding-left')));
+    let newWidth = Math.min(maxWidth, viewportWidth);
+    CELL_SIZE = (newWidth - CELL_PADDING - (COLUMN_COUNT * CELL_PADDING)) / COLUMN_COUNT;
+    CELL_SIZE = Math.min(CELL_SIZE, maxCellSize);
+
+
+    // Scale game area
+    let w = COLUMN_COUNT * (CELL_SIZE + CELL_PADDING) + CELL_PADDING;
+    let h = ROW_COUNT * (CELL_SIZE + CELL_PADDING) + CELL_PADDING + (CELL_SIZE + CELL_PADDING);
+    game.scale.setGameSize(w, h);
 }
 
 

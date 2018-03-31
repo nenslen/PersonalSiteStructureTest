@@ -10,7 +10,7 @@ canvas {
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid darken(#e3e3e3, 10%);
-	transition: all 0.4s;
+	transition: all 0.1s;
 }
 
 canvas:hover {
@@ -19,8 +19,21 @@ canvas:hover {
 
 select {
 	display: block; 
+	padding: 5px 0px 5px 13px !important; 
+	max-width: 100%;
+	width: 100%;
+	height: auto !important; 
+	border: 1px solid darken(#e3e3e3, 10%); 
+	border-radius: 3px; 
+	background-color: #fff; 
+	color: #444444; 
+	font-size: 1.1em; 
+	/*
+	display: block; 
 	padding: 10px 70px 10px 13px !important; 
-	max-width: 100%; height: auto !important; 
+	max-width: 100%;
+	width: 100%;
+	height: auto !important; 
 	border: 1px solid darken(#e3e3e3, 10%); 
 	border-radius: 3px; 
 	background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat; 
@@ -31,20 +44,23 @@ select {
 	appearance: none; 
 	-webkit-appearance: none; 
 	-moz-appearance: none;
+	*/
 } 
 
-select option { 
+select option {
 	padding: 5px; 
 }
 
 select::-ms-expand { 
-	display: none; 
+	//display: none; 
 }
 
 input[type=number] {
 	display: block; 
 	padding: 5px 0px 5px 13px !important; 
-	max-width: 100%; height: auto !important; 
+	max-width: 100%;
+	width: 100%;
+	height: auto !important; 
 	border: 1px solid darken(#e3e3e3, 10%); 
 	border-radius: 3px; 
 	background-color: #fff; 
@@ -64,6 +80,17 @@ input[type=number] {
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+
+	.settings-group {
+		display: flex;
+		align-items: top;
+		justify-content: center;
+
+		.settings-group-inner {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
 }
 
 .card {

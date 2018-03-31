@@ -34,52 +34,56 @@
 						</span>
 						
 						<div class="grid grid-2-1-1">
-							<div>
-								<span class="item">
-									Rows: <input type="number" id="numRows" value="6">
-								</span>
-								<span class="item">
-									Columns: <input type="number" id="numCols" value="7">
-								</span>
-								<span class="item">
-									Winning Length:
-									<input type="number" id="winLength" value="4">
-								</span>
+							<div class="settings-group">
+								<div class="settings-group-inner">
+									<span class="item">
+										Rows: <input type="number" id="numRows" value="6">
+									</span>
+									<span class="item">
+										Columns: <input type="number" id="numCols" value="7">
+									</span>
+									<span class="item">
+										Winning Length:
+										<input type="number" id="winLength" value="4">
+									</span>
+								</div>
 							</div>
 							
-							<div>
-								<span class="item">
-									Red Player:
-									<select id="player1">
-										<option value="0" selected="selected">Human</option>
-										<option value="1">AI: Level 1</option>
-										<option value="2">AI: Level 2</option>
-										<option value="3">AI: Level 3</option>
-										<option value="4">AI: Level 4</option>
-										<option value="5">AI: Level 5</option>
-										<option value="6">AI: Level 6</option>
-										<option value="7">AI: Level 7</option>
-										<option value="8">AI: Level 8</option>
-										<option value="9">AI: Level 9</option>
-										<option value="10">AI: Level 10</option>
-									</select>
-								</span>
-								<span class="item">
-									Blue Player:
-									<select id="player2">
-										<option value="0">Human</option>
-										<option value="1">AI: Level 1</option>
-										<option value="2">AI: Level 2</option>
-										<option value="3">AI: Level 3</option>
-										<option value="4">AI: Level 4</option>
-										<option value="5" selected="selected">AI: Level 5</option>
-										<option value="6">AI: Level 6</option>
-										<option value="7">AI: Level 7</option>
-										<option value="8">AI: Level 8</option>
-										<option value="9">AI: Level 9</option>
-										<option value="10">AI: Level 10</option>
-									</select>
-								</span>
+							<div class="settings-group">
+								<div class="settings-group-inner">
+									<span class="item">
+										Red Player:
+										<select id="player1">
+											<option value="0" selected="selected">Human</option>
+											<option value="1">AI: Level 1</option>
+											<option value="2">AI: Level 2</option>
+											<option value="3">AI: Level 3</option>
+											<option value="4">AI: Level 4</option>
+											<option value="5">AI: Level 5</option>
+											<option value="6">AI: Level 6</option>
+											<option value="7">AI: Level 7</option>
+											<option value="8">AI: Level 8</option>
+											<option value="9">AI: Level 9</option>
+											<option value="10">AI: Level 10</option>
+										</select>
+									</span>
+									<span class="item">
+										Blue Player:
+										<select id="player2">
+											<option value="0">Human</option>
+											<option value="1">AI: Level 1</option>
+											<option value="2">AI: Level 2</option>
+											<option value="3">AI: Level 3</option>
+											<option value="4">AI: Level 4</option>
+											<option value="5" selected="selected">AI: Level 5</option>
+											<option value="6">AI: Level 6</option>
+											<option value="7">AI: Level 7</option>
+											<option value="8">AI: Level 8</option>
+											<option value="9">AI: Level 9</option>
+											<option value="10">AI: Level 10</option>
+										</select>
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>
