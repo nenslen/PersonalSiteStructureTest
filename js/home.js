@@ -26,5 +26,4 @@ $(document).on("scroll", function(){
 		$("#header").removeClass("header-small");
 		$("#header").addClass("header-large");
 	}
-
 });

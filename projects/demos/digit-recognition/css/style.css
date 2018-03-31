@@ -68,6 +68,15 @@ img {
 #resizedCanvas {
   margin-left: 0; }
 
+#resizedCanvasOuter {
+  display: none; }
+  @media screen and (min-width: 500px) {
+    #resizedCanvasOuter {
+      display: block; } }
+  @media screen and (min-width: 800px) {
+    #resizedCanvasOuter {
+      display: block; } }
+
 #controls {
   max-width: 500px;
   margin-top: 25px;

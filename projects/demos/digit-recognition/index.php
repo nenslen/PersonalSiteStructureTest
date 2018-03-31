@@ -23,7 +23,7 @@
                     
                     <div id="canvas-container" class="grid grid-2-1-1">
                         <div id="sketchpad"></div>
-                        <div>
+                        <div id='resizedCanvasOuter'>
                             <canvas id='resizedCanvas' width="280" height="280"></canvas>
                         </div>
                     </div>

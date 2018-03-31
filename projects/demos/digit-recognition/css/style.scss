@@ -78,6 +78,18 @@ img {
 	margin-left: 0;
 }
 
+#resizedCanvasOuter {
+	display: none;
+
+	@include media($small-desktop) {
+		display: block;
+	}
+
+	@include media($desktop) {
+		display: block;
+	}
+}
+
 #controls {
 	max-width: 500px;
 	margin-top: 25px;
