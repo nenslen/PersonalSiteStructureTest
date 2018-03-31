@@ -1,0 +1,42 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@mixin radial-gradient($color1, $color2) {
+	background: $color1;
+    background: -webkit-radial-gradient($color1, $color2);
+    background: -o-radial-gradient($color1, $color2);
+    background: -moz-radial-gradient($color1, $color2);
+    background: radial-gradient($color1, $color2);
+}
+
+// Fixes issues when moving between different sized columns when screen width changes
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+
+// Responsive breakpoints
+$desktop: new-breakpoint(min-width 800px);
+$small-desktop: new-breakpoint(min-width 500px);
+
+// Background
+$bg-color: #111111; // Backup
+$bg-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../media/bg.png');
+$bg-image-odd: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../media/bg.png');
+
+// Page header
+$header-text-color: #444;
+$header-link-color: #444;
+
+// Text and links
+$text-color: #EEEEEE;
+$link-color: #56A3DF;
+
+// Cards
+$card-base-color: gainsboro;
+$card-bg-color: lighten($card-base-color, 10%);
+$card-text-color: #111111;
+$card-border-color: $card-base-color;
+$card-border-radius: 3px;
+$card-spacing: 1.5em;

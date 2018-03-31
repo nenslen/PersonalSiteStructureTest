@@ -1,0 +1,1 @@
+Random Access Memory (RAM) acts as the short term memory for a computer. It stores data that needs to be accessed very quickly, such as currently-running programs.
