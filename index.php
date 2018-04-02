@@ -105,6 +105,33 @@
 						<!-- end Block Puzzle -->
 
 
+						<!-- Connect Four -->
+						<div class="card-outer">
+							<div class="card">
+								<div class="card-media" id="connect-four.webm">
+									<video controls autoplay loop muted>
+										<source src="media/connect-four.webm" type="video/webm">
+									</video>
+								</div>
+
+								<div class="card-title">
+									Connect 4 AI (HTML/SCSS/JS)
+								</div>
+
+								<input type="checkbox" class="read-more-state" id="item-9" />
+								<label for="item-9" class="read-more-trigger"></label>
+								<div class="read-more-wrap card-description">
+									<div class="read-more-target">
+										<p class="text-align-left">Connect Four, featuring an AI opponent that uses some neat methods to play. This project started as an assignment question for a university class and quickly became one of my favorite projects so far! While working on this project I gained a much deeper understanding of how to define a problem precisely and solve it using smart search algorithms.
+										<p class="text-align-left"><a href='https://github.com/nenslen/Connect4' target='_blank'>Project on GitHub</a></p>
+										<p class="text-align-left"><a href='projects/demos/connect-four/'>Demo</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Neural Network -->
+
+
 
 						<!-- Snake -->
 						<div class="card-outer">
